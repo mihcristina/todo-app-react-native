@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList } from 'react-native'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+
+
+import Task from '../components/Task'
 
 export default class ToDo extends Component {
     render() {
@@ -27,6 +30,9 @@ export default class ToDo extends Component {
                 </TouchableOpacity>
             </View>
             <View style={styles.spacer}></View>
+            <View>
+                <Task desc='Comprar livro' ></Task>
+            </View>
         </View>
         )
     }
