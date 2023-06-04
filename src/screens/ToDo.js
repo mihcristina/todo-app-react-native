@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, FlatList } from 'react-native'
 
 export default class ToDo extends Component {
     render() {
@@ -26,6 +26,7 @@ export default class ToDo extends Component {
                     <Text style={styles.text}>Adicionar</Text>
                 </TouchableOpacity>
             </View>
+            <View style={styles.spacer}></View>
         </View>
         )
     }
@@ -79,5 +80,6 @@ const styles = StyleSheet.create({
 
     spacer: {
         padding: 5,
-    }
+    },
+
 })
